@@ -45,6 +45,15 @@
         "Elements",
         "inpUpdate.json"
       ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerUpdate",
+        "Elements",
+        "lblUpdate.json"
+      ]
     }
   ],
   "class": "",

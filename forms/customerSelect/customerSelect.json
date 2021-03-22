@@ -36,6 +36,15 @@
         "Elements",
         "btnSelectNext.json"
       ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerSelect",
+        "Elements",
+        "lblSelect.json"
+      ]
     }
   ],
   "class": "",

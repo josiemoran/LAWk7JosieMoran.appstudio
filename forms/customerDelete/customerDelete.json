@@ -36,6 +36,15 @@
         "Elements",
         "btnDeleteNxt.json"
       ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerDelete",
+        "Elements",
+        "lblDelete.json"
+      ]
     }
   ],
   "class": "",

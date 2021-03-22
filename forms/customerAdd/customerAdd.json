@@ -36,6 +36,15 @@
         "Elements",
         "txtaAdd.json"
       ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "lblAdd.json"
+      ]
     }
   ],
   "class": "",
