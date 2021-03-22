@@ -16,7 +16,7 @@
         "forms",
         "customerDelete",
         "Elements",
-        "Dropdown2.json"
+        "drpDelete.json"
       ]
     },
     {
@@ -25,7 +25,7 @@
         "forms",
         "customerDelete",
         "Elements",
-        "Textarea2.json"
+        "txtaDelete.json"
       ]
     },
     {
@@ -34,7 +34,7 @@
         "forms",
         "customerDelete",
         "Elements",
-        "Button2.json"
+        "btnDeleteNxt.json"
       ]
     }
   ],

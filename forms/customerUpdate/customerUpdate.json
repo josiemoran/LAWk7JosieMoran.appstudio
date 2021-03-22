@@ -16,7 +16,7 @@
         "forms",
         "customerUpdate",
         "Elements",
-        "Dropdown3.json"
+        "drpUpdate.json"
       ]
     },
     {
@@ -25,7 +25,7 @@
         "forms",
         "customerUpdate",
         "Elements",
-        "Button3.json"
+        "btnFinal.json"
       ]
     },
     {
@@ -34,7 +34,7 @@
         "forms",
         "customerUpdate",
         "Elements",
-        "Textarea5.json"
+        "txtaUpdate.json"
       ]
     },
     {
@@ -43,7 +43,7 @@
         "forms",
         "customerUpdate",
         "Elements",
-        "Input1.json"
+        "inpUpdate.json"
       ]
     }
   ],

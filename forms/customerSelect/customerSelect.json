@@ -16,7 +16,7 @@
         "forms",
         "customerSelect",
         "Elements",
-        "Textarea1.json"
+        "txtaCustomer.json"
       ]
     },
     {
@@ -25,7 +25,7 @@
         "forms",
         "customerSelect",
         "Elements",
-        "Dropdown1.json"
+        "drpCustomer.json"
       ]
     },
     {
@@ -34,7 +34,7 @@
         "forms",
         "customerSelect",
         "Elements",
-        "Button1.json"
+        "btnSelectNext.json"
       ]
     }
   ],

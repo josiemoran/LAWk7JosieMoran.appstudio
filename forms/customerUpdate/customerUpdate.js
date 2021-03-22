@@ -3,7 +3,7 @@ query = ""
 results = ""
 
 customerUpdate.onshow = function() {
-  Dropdown3.clear()
+  drpUpdate.clear()
   query = "SELECT name from customer"
   req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mjm46639&pass=" + pw + "&database=mjm46639&query=" + query)
 
@@ -15,22 +15,22 @@ customerUpdate.onshow = function() {
     console.log("No customers to update.")
   } else {
     for (i = 0; i <= results.length - 1; i++)
-      Dropdown3.addItem(results[i])
+      drpUpdate.addItem(results[i])
   }
 }
 let oldName = ''
 
-Dropdown3.onclick = function(s) {
+drpUpdate.onclick = function(s) {
   if (typeof(s) == "object")
     return
   else {
-    Dropdown3.value = s
+    drpUpdate.value = s
     oldName = s
   }
 }
 
 
-Button3.onclick = function() {
+btnFinal.onclick = function() {
   let newName = Input1.value
   let found = false
   for (i = 0; i <= results.length - 1; i++)
@@ -48,8 +48,8 @@ Button3.onclick = function() {
     if (req.status == 200) { 
       if (req.responseText == 500) { 
        console.log(`You changed the customers name!`)
-        Input1.value = ""
-        Dropdown3.value = "Customer"
+        inpUpdate.value = ""
+        drpUpdate.value = "Customer"
       } else
         console.log(`Could not change the name.`)
     } else
@@ -67,6 +67,6 @@ Button3.onclick = function() {
     let customersUpdate = ""
     for (i = 0; i <= results.length - 1; i++)
       customersUpdate = customersUpdate + results[i] + "\n"
-    Textarea5.value = customersUpdate
+    txtaUpdate.value = customersUpdate
   }
 }

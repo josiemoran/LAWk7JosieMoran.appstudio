@@ -3,7 +3,7 @@ query = ""
 results = ""
 
 customerDelete.onshow = function() {
-  Dropdown2.clear()
+  drpDelete.clear()
   query = "SELECT name from customer"
   req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mjm46639&pass=" + pw + "&database=mjm46639&query=" + query)
 
@@ -15,15 +15,15 @@ customerDelete.onshow = function() {
     NSB.MsgBox("There are no customers to delete.")
   } else {
     for (i = 0; i <= customerDeleteR.length - 1; i++)
-      Dropdown2.addItem(customerDeleteR[i])
+      drpDelete.addItem(customerDeleteR[i])
   }
 }
 
-Dropdown2.onclick = function(s) {
+drpDelete.onclick = function(s) {
   if (typeof(s) == "object")
     return
   else {
-    Dropdown2.value = s 
+    drpDelete.value = s 
     let DeleteName = s
     let found = false
     for (i = 0; i <= customerDeleteR.length - 1; i++) {
@@ -33,7 +33,7 @@ Dropdown2.onclick = function(s) {
       }
     }
     if (found == false)
-     Textarea2.value = `This customer does not exist. ${DeleteName} \n ${customerDeleteR}`
+     txtaDelete.value = `This customer does not exist. ${DeleteName} \n ${customerDeleteR}`
     else if (found == true) {
       query = "DELETE FROM customer WHERE name = " + '"' + DeleteName + '"'
       req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mjm46639&pass=" + pw + "&database=mjm46639&query=" + query)
@@ -58,9 +58,9 @@ Dropdown2.onclick = function(s) {
     let customersLeft = ""
     for (i = 0; i <= customerAfterDelete.length - 1; i++)
       customersLeft = customersLeft + customerAfterDelete[i] + "\n"
-    Textarea2.value = customersLeft
+    txtaDelete.value = customersLeft
   }
 }
-Button2.onclick=function(){
+btnDeleteNxt.onclick=function(){
   ChangeForm(customerAdd)
 }
